@@ -1,0 +1,18 @@
+version: '2'
+services:
+  template-app:
+    container_name: 'template-app'
+    build:
+      context: ./../.
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - ./../src:/usr/app/src
+    command:
+      - npm run dev
+    ports:
+      - "8000:8000"
+    # networks:
+    #  - dev_default
+# networks:
+#   dev_default:
+#     external: true

@@ -1,0 +1,14 @@
+dist
+node_modules
+.idea
+*.iml
+test/*
+npm-debug.log
+lib/**/*.js
+lib/**/*.js.map
+lib-test/**/*.js
+lib-test/**/*.js.map
+log
+logs
+.DS_Store
+*gulp-tsc-tmp*
